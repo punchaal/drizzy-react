@@ -1,0 +1,88 @@
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-image: url(./assets/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Custom Scroll - only for -webkit browsers. Not compatible with Edge, IE or Firefox */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #ef9e2e;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(167, 107, 23);
+}
+
+.scroll {
+  overflow-y: scroll;
+}
+
+.ml-1 {
+  margin-left: 10px;
+}
+
+.ml-2 {
+  margin-left: 100px;
+}
+
+.mr-2 {
+  margin-right: 100px;
+}
+
+.btn-primary {
+  background: #ef9e2e;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 700;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.btn-primary:hover {
+  background: rgb(218, 129, 5);
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  box-shadow: 0 2px 0 rgb(218, 129, 5);
+  transform: translateY(3px);
+}
